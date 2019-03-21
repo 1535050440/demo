@@ -21,12 +21,18 @@ use think\Request;
  */
 class Login extends UserApi
 {
+    /**
+     * @var array
+     */
     protected $no_need_token = [
         'login',
         'demo',
     ];
+
     /**
      * Login constructor.
+     * @throws ParameException
+     * @throws \app\exception\PowerException
      */
     public function __construct()
     {
@@ -60,8 +66,7 @@ class Login extends UserApi
 
         // 缓存用户id
         Cache::set($token['token'],$userFind->id,60*60*3);
-//        $userFind = Cache::get($token['token']);
-//        print_r($userFind);exit;
+
         $this->success($token);
     }
 
@@ -70,6 +75,7 @@ class Login extends UserApi
      * @author:dsp
      * @param $code
      * @return UserModel
+     * @throws ParameException
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\ModelNotFoundException
      * @throws \think\exception\DbException

@@ -27,8 +27,11 @@ class UserApi
     protected $no_need_token = [
 
     ];
+
     /**
      * UserApi constructor.
+     * @throws ParameException
+     * @throws PowerException
      */
     public function __construct()
     {
