@@ -39,7 +39,7 @@ Route::get('think', function () {
 Route::any('demo', 'userapi/v1.Login/demo');
 
 
-//  测试api
+//  测试demo
 Route::any('userapi/login/demo','userapi/v1.Login/demo');
 
 return [
