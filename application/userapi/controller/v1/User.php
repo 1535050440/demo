@@ -63,4 +63,17 @@ class User extends UserApi
         $this->success($request->user);
     }
 
+    /**
+     * 获取当前微信运动步数
+     * @author:dsp
+     * @param Request $request
+     * @date:2019/3/21 18:31
+     */
+    public function getWeChatRun(Request $request)
+    {
+        $data_run = $request->param('data_run');
+
+        $this->success($data_run);
+    }
+
 }

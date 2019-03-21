@@ -18,8 +18,8 @@ Route::post('userapi/v1/login/login','userapi/v1.Login/login');
 Route::post('userapi/v1/user/show','userapi/v1.User/show');
 //  修改当前用户信息
 Route::post('userapi/v1/user/update_user_info','userapi/v1.User/updateUserInfo');
-
-
+//  获取WeChat_运动步数
+Route::post('userapi/v1/user/wx_run','userapi/v1.User/getWeChatRun');
 
 
 
