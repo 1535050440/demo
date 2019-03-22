@@ -8,10 +8,11 @@
 
 namespace app\userapi\controller\v1;
 
-use app\common\model\UserModel;
 use app\exception\ParameException;
 use app\userapi\controller\UserApi;
+use app\userapi\model\UserModel;
 use think\facade\Cache;
+use think\facade\Config;
 use think\Request;
 
 /**
@@ -85,8 +86,8 @@ class Login extends UserApi
     {
         $url = 'https://api.weixin.qq.com/sns/jscode2session';
 
-        $get_data['appid'] = 'wx2f297f833310077e';
-        $get_data['secret'] = '242ea8e550cad7a5ff8e3fdb5e1bed55';
+        $get_data['appid'] = Config::get('wx.appid');
+        $get_data['secret'] = Config::get('wx.secret');
         $get_data['js_code'] = $code;
         $get_data['grant_type'] = 'authorization_code';
 
