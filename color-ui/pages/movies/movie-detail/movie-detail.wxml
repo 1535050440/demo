@@ -1,0 +1,2 @@
+<!--pages/movies/movie-detail/movie-detail.wxml-->
+<video style="width: 100%;height=400px;margin:1px;" src="http://api.myphp.vip/index.mp4" binderror="videoErrorCallback"></video>

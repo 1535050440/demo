@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home/home",
+    "pages/home/info/info",
+    "pages/home/about/about",
+    "pages/home/log/log",
+    "pages/home/pic/pic",
+    "pages/posts/posts",
+    "pages/posts/post-detail/post-detail",
+    "pages/movies/movies",
+    "pages/movies/movie-detail/movie-detail",
+    "pages/index/index",
+    "pages/plugin/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#aaa",
+    "selectedColor": "#39b54a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+    
+      {
+        "pagePath": "pages/home/home/home",
+        "iconPath": "/images/tabbar/plugin.png",
+        "selectedIconPath": "/images/tabbar/plugin_cur.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/home/pic/pic",
+        "iconPath": "/images/tabbar/basics.png",
+        "selectedIconPath": "/images/tabbar/basics_cur.png",
+        "text": "关注"
+      },
+      {
+        "pagePath": "pages/home/home/home",
+        "iconPath": "/images/tabbar/about.png",
+        "selectedIconPath": "/images/tabbar/about_cur.png",
+        "text": "关于"
+      }
+    ]
+  }
+}

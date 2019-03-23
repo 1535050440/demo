@@ -1,0 +1,13 @@
+@import "movie-list/movie-list-template.wxss";
+
+.m-container {
+  background-color: #f2f2f2;
+}
+
+.m-template {
+  margin-bottom: 30rpx;
+}
+.tabtop{
+  background-color: rgb(94, 185, 94);
+  height: 50rpx;
+}

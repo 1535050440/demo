@@ -1,0 +1,10 @@
+<!-- 引入评分模板 -->
+<!-- <view style='backgroung-color:red'>1</view> -->
+<import src="../stars/stars-template.wxml" />
+<template name="movieTemplate">
+  <view class='movie-container' catchtap='onMovieTap'>
+    <image class='movie-img' src="{{coverageUrl}}"></image>
+    <text class='movie-title'>{{title}}</text>
+    <template is="starsTemplate" data="{{stars:stars, score:average}}" />
+  </view>
+</template>

@@ -1,0 +1,13 @@
+<view class='tabtop'></view>
+<import src="movie-list/movie-list-template.wxml" />
+<view class='m-container'>
+  <view class='m-template'>
+    <template is="movieListTemplate" data="{{...inTheater}}" />
+  </view>
+  <view>
+    <template is="movieListTemplate" data="{{...comingSoon}}" />
+  </view>
+  <view>
+    <template is="movieListTemplate" data="{{...top250}}" />
+  </view>
+</view>
