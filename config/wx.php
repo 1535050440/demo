@@ -11,5 +11,7 @@
 // +----------------------------------------------------------------------
 return [
     'app_id' => 'wx2f297f833310077e',
-    'secret' => '242ea8e550cad7a5ff8e3fdb5e1bed55'
+    'secret' => '242ea8e550cad7a5ff8e3fdb5e1bed55',
+    'login_url' => "https://api.weixin.qq.com/sns/jscode2session?".
+        "appid=s%&secret=s%&js_code=s%&grant_type=authorization_code"
 ];
