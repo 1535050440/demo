@@ -21,10 +21,11 @@ Page({
         if (res.code) {
           // 发起网络请求
           wx.request({
-            url: url + 'token',
+            url: url + 'login',
             data: {
               code: res.code
             },
+            method:'POST',
             success(res) {
               console.log(res.data.data.token)
               //  token保存到缓存中

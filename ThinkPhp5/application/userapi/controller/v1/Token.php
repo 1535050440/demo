@@ -26,7 +26,7 @@ class Token
     public function getToken(Request $request)
     {
         $code = $request->param('code');
-        
+
         if (empty($code)) {
             throw new ParameException('code参数不能为空');
         }

@@ -23,7 +23,7 @@ Route::post('userapi/v1/user/wx_run','userapi/v1.User/getWeChatRun');
 
 //  获取token
 Route::post('token','userapi/v1.Token/getToken');
-Route::post('userapi/v1/token','userapi/v1.Token/getToken');
+
 
 
 
