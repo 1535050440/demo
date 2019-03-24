@@ -28,8 +28,8 @@ class Token
             throw new ParameException('code参数不能为空');
         }
 
-        $userToken = new UserToken();
-        $token = $userToken->get($code);
+        $userToken = new UserToken($code);
+        $token = $userToken->get();
 
         return $token;
     }

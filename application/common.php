@@ -34,3 +34,8 @@ function curl_get($url, &$httpCode = 0)
 
     return $file_contents;
 }
+function getRandString()
+{
+    $result = time();
+    return $result;
+}
