@@ -21,7 +21,7 @@ Page({
         if (res.code) {
           // 发起网络请求
           wx.request({
-            url: url + 'login',
+            url: url + 'token',
             data: {
               code: res.code
             },

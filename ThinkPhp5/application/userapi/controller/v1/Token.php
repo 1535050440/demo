@@ -11,6 +11,7 @@ namespace app\userapi\controller\v1;
 
 use app\exception\ParameException;
 use app\userapi\service\UserToken;
+use think\Request;
 
 class Token
 {
@@ -22,8 +23,10 @@ class Token
      * @throws ParameException
      * @date:2019/3/23 16:27
      */
-    public function getToken($code)
+    public function getToken(Request $request)
     {
+        $code = $request->param('code');
+        
         if (empty($code)) {
             throw new ParameException('code参数不能为空');
         }
