@@ -24,7 +24,7 @@ class ParameException extends BaseException
      * @param int $code
      * @param Throwable|null $previous
      */
-    public function __construct($message = '抱歉，参数错误', $code = 4003, Throwable $previous = null)
+    public function __construct($message = '抱歉，参数错误', $code = 403, Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }
